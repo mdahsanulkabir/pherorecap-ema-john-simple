@@ -1,14 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+
+* {
+    box-sizing: border-box;
+}
 .product {
     width: 300px;
     height: 510px;
     border: 1px solid #95A0A7;
+    border-radius: 8px;
+    padding: 7px;
+    position: relative;
 }
 
 .product img {
     width: 286px;
     height: 286px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.product-info  {
+    padding-inline: 12px;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-name {
@@ -18,4 +33,33 @@
     font-size: 21px;
     line-height: 25px;
     letter-spacing: 0.0015em;
+    margin-top: 0;
+    margin-bottom: 11px;
+}
+
+.small-info {
+    margin-top: auto;
+}
+
+.button-cart {
+    width: 100%;
+    background: #FFE0B3;
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+    height: 48px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-cart:hover {
+    background-color: orange;
+}
+
+.button-cart p {
+    margin-right: 7px;
 }
